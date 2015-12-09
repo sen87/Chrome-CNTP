@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/16217416/11696937/4d0c1ec8-9eb7-11e5-9b3a-7367182466dc.png"/>
-</p>
 # Chrome-CNTP
 An extension for Chrome/Chromium that provides a customizable New Tab Page.
 
