@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+Title:		Custom New Tab Page - Options
+Author:		sen
+Version:		0.1
+-->
+<html>
+<head>
+  <title>CNTP - Settings</title>
+  <meta charset="UTF-8">
+  <link id="css_layout" rel="stylesheet" href="css/options/min/options.min.css" type="text/css" />
+  <link rel="icon" href="../favicon/icon16.png" type="image/x-icon" />
+  <script type="text/javascript" src="../js/min/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+  <img src="../favicon/icon128.png"></img>
+  <h1>Custom New Tab Page <br>Settings</h1><br>
+  <div class="tabs">
+    <ul class="tab-links">
+      <li class="active"><a href=".tab_general">General</a></li>
+      <li><a href=".tab_layout">Layout</a></li>
+      <li><a href=".tab_theme">Theme</a></li>
+      <li><a href=".tab_weather">Weather</a></li>
+      <li><a href=".tab_bookmarks">Bookmarks</a></li>
+      <li><a href=".tab_rss">News Feeds</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab_general" class="tab active">
+        <p>
+          Tab Title: <input type="text" class="g_title"></input><br><br>
+          <input type="checkbox" class="g_pin"> Pin Tab</input>
+        </p>
+      </div>
+      <div class="tab_layout" class="tab active">
+        <p>
+          Layout: <select class="l_layout"><option value="default">Default</option><option value="custom">Custom</option></select><br>
+          <div class="l_createbox"></div>
+          <table class="l_preview"></table><br>
+          <div class="color-box" id="W"></div> Weather <div class="color-box" id="N"></div> Notes <div class="color-box" id="B"></div> Bookmarks <div class="color-box" id="F"></div> <b><label class="l_feedcount"></label></b> News Feeds
+        </p>
+      </div>
+      <div class="tab_theme" class="tab active">
+        <p>
+          CSS: <select class="t_theme"></select><br><br>
+          <button class="t_pop_show">Want to create your own Theme? No Problem!</button>
+          <div class="t_info"></div>
+        </p>
+      </div>
+      <div class="tab_weather" class="tab active">
+        <p>
+          using the <a href="http://monkeecreate.github.io/jquery.simpleWeather/">jquery.simpleWeather API</a> by James Fleeting<br>
+          and <a href="http://vclouds.deviantart.com/art/VClouds-Weather-Icons-179152045">Weather Icons</a> by VClouds<br><br>
+          Temperature Unit:
+          <select class="w_tempunit"><option value="c">Celsius (°C)</option><option value="f">Fahrenheit (°F)</option></select><br><br>
+          <input type="checkbox" class="w_forecast"> Show 3-Day Forecast</input><br><br>
+          Location ID (<a href="http://isithackday.com/geoplanet-explorer/">WOEID</a>): <input type="text" class="w_woeid"></input><br><br>
+          Page Link: <input type="text" class="w_link"></input>
+        </p>
+      </div>
+      <div class="tab_bookmarks" class="tab active">
+        <p>
+          <input type="checkbox" class="b_favicons"> Show Favicons<br><br>
+          Input Format for Bookmarks: <b>PageName,PageURL</b> (seperated by a comma - one entry per line).<br>
+          Categories will be sorted alphabetically (numbers before characters).<br><br>
+          <button class="b_addcategory">Add a new Category</button><br><br>
+          <div class="b_cats"></div>
+        </p>
+      </div>
+      <div class="tab_rss" class="tab active">
+        <p>
+          Supports <b>Atom 1.0</b>, <b>RSS 2.0</b> and <b>Media RSS</b>(images).<br><br>
+          Number of Items per Feed: <input type="number" class="f_itemcount"></input><br><br>
+          <button class="f_pop_show">News Feeds? Whaaat?</button>
+          <div class="f_info"></div>
+          <p class="f_entry"><b>01.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>02.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>03.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>04.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>05.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>06.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>07.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>08.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>09.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>10.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>11.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>12.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>13.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>14.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>15.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>16.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>17.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>18.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>19.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+          <p class="f_entry"><b>20.</b> Name: <input type="text" class="f_name" disabled> Page Link: <input type="text" class="f_link" disabled> Feed URL: <input type="text" class="f_url" disabled> Thumbnail: <select class="f_imgtype" disabled><option value="d">Disabled</option><option value="s">Small</option><option value="m">Medium</option><option value="l">Large</option></select></p>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <button class="defaults">Restore Defaults</button><a class="status_box"><label class="status" style="padding-right: 20px"></label><button class="save">Save Settings</button></a>
+    <script src="js/options.js"></script>
+  </body>
+  </html>

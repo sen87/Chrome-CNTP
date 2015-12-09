@@ -1,0 +1,6 @@
+ DejaVuSans         www.dejavu-fonts.org
+ boombox            www.jonathanpaterson.ca/boom.html
+ DigitalReadout     www.urbanfonts.com/fonts/Digital_Readout.htm
+ Pacifico           http://fonts.googleapis.com/css?family=Pacifico
+ defused            http://www.reticula.fr/EN/blog/portfolio-item/defused-font/
+ DroidSans          http://www.droidfonts.com/droidfonts/

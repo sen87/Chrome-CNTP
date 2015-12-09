@@ -1,0 +1,155 @@
+@charset "utf-8";
+/*
+Title:    Custom Start Page - Default Grid Layout
+Author:   sen
+Version:  1.0
+*/
+
+/* Container
+========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;		/* disable Scrollbar */
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.window_tab {
+  border-collapse: separate;
+  table-layout:fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.window_tab tr {
+  /*height: calc(33.33vh - 2.2em);	/* 3 Rows */
+  /* height: calc(25vh - 2.2em);	/* 3 Rows */
+}
+
+
+
+/* Frames
+========================================================================== */
+/* TOP */
+.head {
+  height: 36px;		/* fixed Size needed for .feed_frame Height Scaling */
+  line-height: 36px;
+}
+
+/* TOP - TITLE */
+h3 {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* CONTENT */
+.b_frame,
+.weather_frame,
+.notes_frame,
+.feed_frame {
+  display: block;
+  overflow: auto;
+  height: calc(100% - 36px);		/* Vertical Height Scaling */
+  width: calc(100% - 20px);
+}
+
+
+
+/* Feeds
+========================================================================== */
+.feed_image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.feed_image_shadow {
+  display:block;
+  position:relative;
+}
+
+.feed_image_shadow::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Weather
+========================================================================== */
+.weather_frame {
+  overflow-x: hidden;
+}
+
+.weather_tbl img {
+  z-index: -1;
+  width: 175px;
+  height: 120px;
+}
+
+.weather_tbl_forecast img {
+  width: 87.5px;
+  height: 60px;
+}
+
+.weather_tbl {
+  width: 100%;
+  height: 100%;
+}
+
+.weather_tbl td {
+  width: 50%;
+  height: 50%;
+}
+
+.weather_tbl_forecast {
+  width: 100%;
+  height: 100%;
+}
+
+.weather_tbl_forecast td {
+  width: 25%;
+}
+
+
+
+/* Notes
+========================================================================== */
+.notes_frame {
+  background-color: transparent;
+  word-wrap: break-word;
+}
+
+
+
+/* Bookmarks
+========================================================================== */
+.tbl_b1,
+.tbl_b2 {
+  overflow-x: hidden;
+  vertical-align: top;
+  white-space: nowrap;
+  display: inline-block;
+  margin-top: -10px;
+  width: 48%;
+}
+
+.tbl_b1 {
+  padding-right: 4%;
+}
