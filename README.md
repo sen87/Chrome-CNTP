@@ -23,8 +23,15 @@ New Tab Page  (defaults) | Settings (Layout)
 ###Arch Linux
 https://aur.archlinux.org/packages/chrome-cntp/
 
-###Manual Install
-TODO
+###Manual Installation (All Operating Systems)
+1. download the current [git master](https://github.com/sen87/Chrome-CNTP/archive/master.zip) or the latest [release](https://github.com/sen87/Chrome-CNTP/releases) 
+2. extract the zip archive 
+3. open chrome / chromium
+4. go to settings >>> extensions
+5. enable developer mode
+![manual_install](https://cloud.githubusercontent.com/assets/16217416/11702175/debfff5c-9ed4-11e5-9eee-9afa95ec0426.png)
+6. click on "load unpacked extension" and select the folder in the extracted zip archive
+
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/16217416/11696937/4d0c1ec8-9eb7-11e5-9b3a-7367182466dc.png"/>
 </p>
