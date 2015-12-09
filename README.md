@@ -6,7 +6,9 @@ An extension for Chrome/Chromium that provides a customizable New Tab Page.
 
 
 ##Screenshots
-oh no 404
+New Tab Page  (defaults) | Settings (Layout)
+------------ | -------------
+![window](https://cloud.githubusercontent.com/assets/16217416/11699246/ba80b778-9ec3-11e5-8346-81bfe4e2f01e.png) | ![settings](https://cloud.githubusercontent.com/assets/16217416/11699257/cab0b08a-9ec3-11e5-87a4-8eb7d12206c1.png)
 
 
 ##Features
@@ -26,3 +28,6 @@ https://aur.archlinux.org/packages/chrome-cntp/
 
 ###Manual Install
 TODO
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/16217416/11696937/4d0c1ec8-9eb7-11e5-9b3a-7367182466dc.png"/>
+</p>
