@@ -119,14 +119,14 @@ h3 {
 /* RSS
 ========================================================================== */
 .feed_entry {
-  color: #575757;
+  color: black;
 }
 
 .feed_entry p {
   padding-bottom: 5px;
   margin-bottom: 5px;
   font-size: 0.8em;
-  color: #323232;
+  color: #575757;
   border-bottom: 2px solid #575757;
 }
 
@@ -135,12 +135,12 @@ h3 {
 }
 
 .feed_entry:visited {
-  color: #555555;
+  color: #aeaeae;
   box-shadow: 0 0 1px 1px rgba(0,0,0,0.5);
 }
 
 .feed_entry:hover {
-  color: #000000;
+  color: #aeaeae;
 }
 
 .feed_image {

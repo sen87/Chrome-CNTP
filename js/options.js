@@ -434,8 +434,8 @@ $(document).ready(function() {
     To make your theme available here in the settings menu, go into the <b>"js"</b> folder of the extension and open the file <b>"options.js"</b>.<br>\
     On the last line of this file you can find the <b>"css_themes"</b> array that contains all the theme names.\
     Simply add your theme to this list and save the file in the subfolder "min" as "options.min.js" and reload the settings page.<br><hr>\
-    Have fun! :D<br>\
-    If you created a nice theme that you would like to see included in this release drop me an email: sen@archlinux.us<br><br>\
+    If you created a nice theme that you would like to see included in this release drop me an <a href="mailto:sen@archlinux.us">email</a> or check out the <a href="https://github.com/sen87/Chrome-CNTP">git repo</a><br>\
+    Have fun! :D<br><br>\
     <button class="t_pop_cancel">✔</button></div>');
     // extension location help link
     $('.t_link').on('click', function() {
